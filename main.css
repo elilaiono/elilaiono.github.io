@@ -2,18 +2,36 @@
     max-width: 960px;
     margin: 0 auto;
     background-color: white;
-    color: white;
+    
 }
+
+
+    
 
 header {
     background-color: #2874A6;
     text-align: center;
     padding: 5px 5px;
+    color:whitesmoke;
+    border-radius: 40px;
+    box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
 }
 
 footer {
     background-color: #2874A6;
     text-align: center;
     padding: 5px 5px;
+    color:whitesmoke;
+    border-radius: 40px;
+    box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
 }
 
+footer a {
+    color: white;
+}
+
+.imgg {
+    width: 115px;
+    float: right;
+    padding: 20px;
+}
