@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+body {
+    display: grid;
+    justify-items: center;
+}
+
+#content {
+    width: 100%;
+    height: fit-content;
+}
+
+h1, h2, h3 {
+    font-family: "Lato", sans-serif;
+    color: white
+}
+
+h1 {
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.top-div p, .top-div a {
+    font-size: 1.2rem;
+    padding: 5px;
+    margin-bottom: auto;
+}
+
+a {
+    color: #2874A6;
+}
+
+header,
+footer {
+    text-align: center;
+    background-color: #2874A6;
+    padding: 25px;
+    color: white;
+    border-radius: 40px;
+    box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
+}
+
+
+footer a {
+    color: white;
+}
+
+
+.pics img {
+    width: 100%;
+    margin-bottom: -10;
+}
+
+.content-box {
+    /* width: 460px; */
+    width: 100%;
+    background-color: #f4f4f4;
+    border-radius: 40px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
+
+}
+
+.content-box h3 {
+    font-size: x-large;
+    color: black;
+    padding: 20px 15px;
+    margin: 0;
+    border-radius: 15px 15px 0 0;
+}
+
+.pics {
+    /* width: 425px; */
+    width: 90%;
+    height: 800px;
+    margin: 0 auto;
+    margin-bottom: -10;
+
+}
+
+.bottom-border {
+    padding: 20px;
+    border-radius: 0 0 15px 15px;
+
+}
+
+.description p {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin-top: -10;
+}
+
+.description {
+    padding: 10px 0;
+}
+
+.top-div {
+
+    padding: 10px 15px;
+    
+
+}
+
+#sections-container {
+    max-width: 80%;
+    margin: 0 auto;
+    
+}
+
+
+
+/*---Medium---*/
+@media only screen and (min-width:45em) {
+    #sections-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+    }
+
+}
+
+/*---Large---*/
+@media only screen and (min-width:70em) {
+    #sections-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}

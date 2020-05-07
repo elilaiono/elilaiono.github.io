@@ -1,2 +1,3 @@
-var d = new Date();
-document.getElementById("date").innerHTML = d;
+document.getElementById("year").innerHTML = new Date().getFullYear();
+
+document.getElementById("last-mod").innerHTML = document.lastModified;
