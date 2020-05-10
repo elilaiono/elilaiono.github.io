@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 .font-1 {
-    font-family: "PT Serif:ital,wght@1,700";
+    font-family: "Roboto";
 }
 
 .font-2 {
+    font-family: "PT Serif";
+}
+
+ h1, h2, h3 {
+    font-family: "Roboto";
+}
+
+p {
     font-family: "PT Serif";
 }
 
@@ -33,6 +41,23 @@ nav ul {
     justify-content: space-around;
     list-style: none;
 }
+
+li a {
+    font-size: 1.5em;
+    padding: 0.3em;
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0 6px;
+    z-index: 1;
+    font-weight: 500;
+    position: relative;
+    font-family: "PT Serif";
+}
+
+nav a:hover {
+    background-color: white;
+    color: grey;
+  }
 
 footer {
     background-color: #2874A6;
