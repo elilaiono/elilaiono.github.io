@@ -71,3 +71,19 @@ footer {
 footer a {
     color: white;
 }
+
+.primary-color {
+    background-color:#2874A6 ;
+}
+
+.secondary-color {
+    background-color: #86A397 ;
+}
+
+.accent-1 {
+    background-color:#B1B695
+}
+
+.accent-2 {
+    background-color: #D17A22 ;
+}
