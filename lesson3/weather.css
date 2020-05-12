@@ -36,6 +36,12 @@ header {
     background-color: #2874A6;
     color: white;
 }
+
+img {
+    max-width: 200px;
+}
+
+
 nav ul {
     display: flex;
     justify-content: space-around;
