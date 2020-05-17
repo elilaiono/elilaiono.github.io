@@ -1,50 +1,108 @@
-/*Small*/
+    /*Small*/
+
 nav {
-	margin: 0 auto;
-	max-width: 760px;
-	background-color: #2874A6;
-}
-.navigation {
-	list-style: none;
-	padding: 0;
-}
-.navigation li:first-child {
-	display: block;
-}
-.navigation li {
-	display: none;
-}
-.navigation a {
-	display: block;
-	padding: 0.75rem;
-	text-align: left;
-	text-decoration: none;
-	color: white;
-	font-weight: 700;
-}
-.navigation a:hover {
-	color: grey;
-	background-color: white;
+    margin: 0 auto;
+    max-width: 760px;
+    background-color: #2874A6;
 }
 
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.navigation a:hover {
+    color: grey;
+    background-color: white;
+}
 
 .responsive li {
-	display: block;
+    display: block;
 }
 
-/*Large*/
-@media only screen and (min-width: 32.5em) {
-	.navigation {
-		display: flex;
-	}
-	.navigation li {
-		display: block; 
-		flex: 1 1 auto;
-	}
-	.navigation a {
-		text-align: center;
-	}
-	.navigation li:first-child {
-		display: none;
-	}
+.logo {
+    background-color: white;
+    border-radius: 50px 50px 0 0;
+    padding: 0.5em;
+    width: 80px;
 }
+
+h1 {
+    font-size: medium;
+}
+
+footer {
+    background-color: #2874A6;
+    text-align: center;
+    padding: 5px 5px;
+    color: whitesmoke;
+    border-radius: 40px;
+    box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
+}
+
+footer a {
+    color: white;
+}
+
+
+/*Large*/
+
+@media only screen and (min-width: 32.5em) {
+    .navigation {
+        display: flex;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+    .navigation a {
+        text-align: center;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+}
+
+footer {
+    background-color: #2874A6;
+    text-align: center;
+    padding: 5px 5px;
+    color: whitesmoke;
+    border-radius: 40px;
+    box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
+}
+
+footer a {
+    color: white;
+}
+
+#content {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+header {
+    background-color: #2874A6;
+    text-align: center;
+    padding: 5px 5px;
+    color: whitesmoke;
+    border-radius: 40px;
+    box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
