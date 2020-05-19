@@ -130,3 +130,8 @@ header {
     border-radius: 40px;
     box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
 }    
+
+main h3 {
+    background-color: lightgray;
+    padding: 10px;
+}    
