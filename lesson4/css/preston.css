@@ -1,4 +1,13 @@
-    /*Small*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+   
+   
+   /*Small*/
+body {
+    padding: 10px;
+
+}
 
 nav {
     margin: 0 auto;
@@ -44,8 +53,22 @@ nav {
     width: 80px;
 }
 
+.slogan {
+    font-family: "PT Serif";
+}
+
 h1 {
-    font-size: medium;
+    text-align: center;
+}
+
+.main-container {
+    max-width: 100%;
+   
+}
+
+ main h3 {
+    background-color: lightgray;
+    padding: 10px;
 }
 
 footer {
