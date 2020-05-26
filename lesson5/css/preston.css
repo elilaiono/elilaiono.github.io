@@ -10,10 +10,10 @@ body {
 }
 
 header {
-    background-color: #2874A6;
+    background-color: #1F5673;
     text-align: center;
     padding: 5px 5px;
-    color: whitesmoke;
+    color: white;
     border-radius: 40px;
     box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
 }
@@ -21,8 +21,15 @@ header {
 nav {
     margin: 0 auto;
     max-width: 760px;
-    /*background-color: #2874A6;*/
+    background-color: #2874A6;
+    border-radius: 40px;
 }
+
+h1 {
+    font-family: "Roboto";
+}
+
+/*start nav layout*/
 
 .navigation {
     list-style: none;
@@ -56,6 +63,8 @@ nav {
     display: block;
 }
 
+/*end nav layout*/
+
 .logo {
     background-color: white;
     border-radius: 50px 50px 0 0;
@@ -86,11 +95,6 @@ nav {
 .main-container {
     max-width: 100%;
    
-}
-
- main h3 {
-    background-color: lightgray;
-    padding: 10.5px;
 }
 
 footer {
@@ -124,8 +128,8 @@ h2, p {margin: 0;}
 	opacity: .8;
 }
 
-main h1 {
-    text-align: center;
+.forecast {
+    display: none;
 }
 
 
@@ -150,7 +154,7 @@ main h1 {
     #content {
         max-width: 960px;
         margin: 0 auto;
-        background-color: white;
+        
     }
     
     nav a {
@@ -178,6 +182,42 @@ main h1 {
         width: 100%;
         
     }
+
+    .forecast {
+        display: unset;
+       
+    }
+
+    .forecast h2 {
+        text-align: center;
+        
+    }
+
+    table {
+        border-collapse: collapse;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        
+    }
+    
+    table, th, td {
+        border: 1px solid black;
+        align-self: center;
+    }
+    
+    th, td {
+        padding: 15px;
+    }
+    
+    main h1 {
+        text-align: center;
+    }
+
+
+    
+
+
 
 }
 
