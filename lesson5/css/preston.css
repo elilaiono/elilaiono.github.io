@@ -25,8 +25,12 @@ nav {
     border-radius: 40px;
 }
 
-h1 {
+h1, h2, h3, h4 {
     font-family: "Roboto";
+}
+
+p {
+    font-family: "PT Serif";
 }
 
 /*start nav layout*/
@@ -251,7 +255,9 @@ iframe {
     }
 
     iframe {
-        width: 300px;
+        width: 100%;
+
+        
     }
 
     .hero-img {
@@ -259,9 +265,30 @@ iframe {
     }
 
     .article-img {
-        width: 30%;
+        width: 40%;
         float: right;
     }
+
+    /*.active {
+        color: grey;
+        background-color: white;
+    }*/
+
+    .contact-info {
+        margin-top: 50px;
+        background-color: #1F5673;
+        border: solid;
+        color: white;
+        padding: 20px;
+        border-radius: 40px;
+        box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
+    
+    }
+
+    
+
+    
+
 
 
     
