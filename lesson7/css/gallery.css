@@ -1,0 +1,54 @@
+
+
+.gallery-h1{
+    text-align: center;
+    padding: 30px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 45px;
+}
+img {
+    display: block;
+    margin: 0 auto;
+}
+figure {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+figcaption {
+    display: none;
+    text-align: center;
+    padding: 5px;
+}
+img {
+    max-width: 400px;
+    width: 95%;
+}
+
+
+@media screen and (min-width: 550px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+    img {
+        max-width: 400px;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    main {   
+        grid-template-columns: 1fr 1fr 1fr; 
+    }
+    figure img:hover {
+        box-shadow: 0 0 15px #333;
+    }
+    figcaption {
+        display: block;
+    }
+}
