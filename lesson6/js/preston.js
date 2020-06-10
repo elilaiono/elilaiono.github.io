@@ -18,3 +18,10 @@ const pancake_alert = document.querySelector('.pancakes');
 if (weekname === 'Friday'){
     pancake_alert.style.display = "block";
 }
+
+/* Calculating Windchill */
+wind= document.getElementById("wind").textContent ;
+temp= document.getElementById("temp").textContent ;
+chill=(0.0817*(3.71*(Math.pow(wind, 0.5))+
+5.81-0.25*wind)*(temp-91.4)+91.4);
+document.getElementById("chill").textContent= chill;
