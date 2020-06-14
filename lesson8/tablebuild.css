@@ -16,11 +16,11 @@ table, th, td {
 
 
 th, td {
-    padding: 5px;
+    padding: 10px;
 }
 
 thead {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 thead, tfoot {
