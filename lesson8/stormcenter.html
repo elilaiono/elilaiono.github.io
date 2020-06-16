@@ -33,12 +33,44 @@
         </nav>
     </header>
     <main>
-        <h1>Storm Center</h1>
+        <h2>Storm Center</h2>
+        <form>
+            <div id="all">
+            <fieldset class="content-box">
+                <legend>Contact Information</legend>
+                <label class="item">Name*<input  minlength="5" pattern="[A-Za-z]+$" type="text" name="name" required></label>
+                <label class="item">Email<input type="email" name="email" placeholder="example@email.com"></label>
+                <label class="item">Phone Number*<input type="tel" name="phone" required></label>
+                <label class="item">Zip Code*<input type="number" name="zip" required></label>
+            </fieldset>
+            <fieldset class=content-box>
+                <legend class="item">Storm Information</legend>
+                <label class="item">Storm Type<input list="stormtype"><datalist id="stormtype">
+                        <option>Flash Flood</option>
+                        <option>Hail</option>
+                        <option>Hurricane</option>
+                        <option>Thunderstorm</option>
+                        <option>Tornado</option>
+                    </datalist></label>
+                <label class="item">Storm Severity<input type="range" name="severity" min="1" max="10" step="1"></label>
+                <label class="item">Region<select name="region">
+                        <option selected disabled>Please Select</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodasprings">Soda Springs</option>
+                        <option value="fishhaven">Fish Haven</option>
+                    </select></label>
+                <div class="item">Are you in Danger?</div>
+                <label class="item radio-label"><input class="radio" type="radio" name="danger" value="yes">Yes</label>
+                <label class="radio-label"><input class="radio" type="radio" name="danger" value="no">No</label>
+                <label class="radio-label"><input class="radio" type="radio" name="danger" value="maybe">Maybe</label>
+                <label class="item">Additional Information and Comments<textarea name="info" rows="4" cols="50"></textarea></label>
+            </fieldset>
 
-
-
-
+            <input type="submit" value="Report Storm" class="sub-button">
+        </div>
+        </form>
     </main>
+
     <footer>
         <p>
             &copy; 2020 | Elijah L. Aiono | Nevada | <a href="https://byui.edu/online">BYUI Online Learning</a>

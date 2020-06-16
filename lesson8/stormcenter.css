@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+h2 {
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, textarea, input, div, select {
+    display: block;
+    font-family: "Roboto", sans-serif;
+}
+
+input, select {
+    height: 44px;
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.item {
+    margin-top: 20px;
+}
+
+legend {
+    font-family: "Roboto", serif;
+    font-size: 1.2em;
+    padding: 5px 20px 10px 20px;
+    background-color: #1F5673;
+    color: white;
+    display: block;
+    border-radius: 20px;
+}
+
+fieldset {
+    border: none;
+    padding-left: 40px;
+}
+
+input[type="radio"] {
+    display: block;
+    border: 1px solid #ccc;
+    width: 20px;
+}
+
+label {
+    padding-bottom:20px;
+}
+
+.sub-button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    border-radius: 40px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    
+}
+
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input:valid {
+    border: 1px solid #ccc;
+}
+.sub-button:hover {
+   color: white;
+   background-color: #1F5673;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+}
+
+.radio-label input {
+    margin-right: 8px;
+}
+
+#all {
+    align-items: center;
+}
+
+/* Large Screens */
+@media only screen and (min-width: 1100px) {
+  
+
+    input[type="radio"]{
+    height: 15px;
+
+}
+
+    input, select {
+    height: 30px;
+}
+
+    .sub-button {
+    width: 150px;
+    padding-bottom: 50px;
+}
+
+
+
+}
