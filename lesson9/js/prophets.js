@@ -27,7 +27,7 @@ fetch(requestURL)
            document.querySelector('div.cards').appendChild(card);
 
            img.setAttribute('src', prophets[i].imageurl);
-           img.setAttribute('alt', "An image of a Prophet");
+           img.setAttribute('alt', "An image of " + prophets[i].name + ' ' + prophets[i].lastname);
            card.appendChild(img);
            document.querySelector('div.cards').appendChild(card);
       
