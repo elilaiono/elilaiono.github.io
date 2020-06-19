@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap');
+
+section {
+    background-color:#C8C6D7;
+    padding-bottom: 20px;
+    border-style: groove;
+    margin-bottom: 5px;
+}
+
+h1, h2, footer {
+    color: #4A5899;
+    font-family: 'Domine', sans-serif;
+}
+
+h1, h2, p, footer {
+    text-align: center;
+}
+
+h2 {
+    padding-top: 10px;
+}
+
+img {
+    display: block;
+    max-width: 120px;
+    margin: 0 auto;
+    box-shadow: 0 0 15px #333;
+}
+
+footer {
+    padding: 10px 10px;
+}
+
+/*Large View*/
+
+@media screen and (min-width: 900px) {
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    
+        box-shadow: 0 0 15px #333;
+        padding: 15px;
+    }
+
+    section {
+        max-width: 350px;
+        height: 350px;
+    }
+
+    section:last-child {
+        grid-column: 3/5;
+        margin-left: -180px;
+    }
+
+    img {
+        max-width: 150px;
+    }
+
+   
+
+}
