@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*Pueblito Div CSS*/
+
+section {
+    background-color:#C8C6D7;
+    padding-bottom: 20px;
+    border-style: groove;
+    margin-bottom: 5px;
+}
+
+h1, h3, footer {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h3, p, footer {
+    text-align: center;
+}
+
+img {
+    display: block;
+    max-width: 120px;
+    margin: 0 auto;
+    box-shadow: 0 0 15px #333;
+}
+
+/*Header CSS (Includes Nav)*/
+
+header {
+    text-align: center;
+    padding: 5px 5px;
+    border-radius: 40px;
+    box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
+    background-color: #2874A6;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+li a {
+    font-size: 1.5em;
+    padding: 0.3em;
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0 6px;
+    z-index: 1;
+    font-weight: 500;
+    position: relative;
+    font-family: "PT Serif";
+}
+
+nav a:hover {
+    background-color: white;
+    color: grey;
+  }
+
+/*Footer CSS*/
+
+footer {
+    background-color: #2874A6;
+    text-align: center;
+    padding: 5px 5px;
+    color:whitesmoke;
+    border-radius: 40px;
+    box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
+}
+
+footer a {
+    color: white;
+}
+
+/*Medium View*/
+
+
+
+
+
+
+
+
+/*Large View*/
