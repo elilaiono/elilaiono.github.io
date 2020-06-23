@@ -50,10 +50,10 @@ fetch(requestURL)
     alert("Sorry the data is not available now.");
 });
 
-//const hambutton = document.querySelector('.ham');
-//const mainnav = document.querySelector('.navigation')
+const hambutton = document.querySelector('.ham');
+const mainnav = document.querySelector('.navigation')
 
-//hambutton.addEventListener('click', () => { mainnav.classList.toggle('responsive') }, false);
+hambutton.addEventListener('click', () => { mainnav.classList.toggle('responsive') }, false);
 
 let week_names = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thurday', 'Friday', 'Saturday'];
 let month_names = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October',
