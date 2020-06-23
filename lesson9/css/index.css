@@ -107,7 +107,7 @@ footer a {
 
 /*Medium View*/
 
-/*@media screen and (min-width: 550px) and (max-width: 600px) {
+@media screen and (min-width: 550px)  {
 
 section {
     max-width: 600px;
@@ -117,11 +117,13 @@ section {
     display: flex;
     flex-wrap: wrap;
 
-}*/
+}
+
+}
 
 /*Large View*/
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1100px) {
 
 .pueblito {
     display: grid;
