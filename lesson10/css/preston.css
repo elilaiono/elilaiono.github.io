@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+   
+   
+   /*Small*/
+
+.pancakes {
+    display: none;
+    text-align: center;
+    font-size: 15px;
+}
+   
+body {
+    padding: 10px;
+}
+
+header {
+    background-color: #1F5673;
+    text-align: center;
+    padding: 5px 5px;
+    color: white;
+    border-radius: 40px;
+    box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 760px;
+    background-color: #2874A6;
+    border-radius: 40px;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Roboto";
+}
+
+p {
+    font-family: "PT Serif";
+}
+
+/*start nav layout*/
+
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    
+}
+
+.navigation a:hover {
+    color: grey;
+    background-color: white;
+}
+
+.responsive li {
+    display: block;
+}
+
+/*end nav layout*/
+
+.logo {
+    background-color: white;
+    border-radius: 50px 50px 0 0;
+    padding: 0.5em;
+    width: 80px;
+    justify-self: center;
+    
+}
+
+.header-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 40px;
+
+}
+
+.slogan {
+    font-family: "PT Serif";
+    font-size: small;
+    grid-area: 2/1/4/3;
+}
+
+.site-name {
+    justify-self: end;
+    align-self: start;
+}
+
+.main-container {
+    max-width: 100%;
+   
+}
+
+footer {
+    background-color: #2874A6;
+    text-align: center;
+    padding: 5px 5px;
+    color: whitesmoke;
+    border-radius: 40px;
+    box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
+}
+
+footer a {
+    color: white;
+}
+
+.hero-img {
+    width: 100%;
+}
+
+.article-img {
+    width: 100%;
+}
+
+.article {
+    margin-top: 75px;
+}
+
+.herodiv {margin: 10px auto;position: relative;}
+h2, p {margin: 0;}
+
+.weather-summary {
+	position: absolute;
+	top: 25px;
+	left: 50px;
+	background: radial-gradient(#eee, #4567aa);
+	border: 1px solid #000;
+	padding: 1rem;
+	box-shadow: 0 0 30px #111;
+	opacity: .8;
+}
+
+.forecast {
+    display: none;
+}
+
+iframe {
+    width: 100%;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+
+
+/*Large*/
+
+@media only screen and (min-width: 32.5em) {
+    .navigation {
+        display: flex;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+    .navigation a {
+        text-align: center;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+
+    #content {
+        max-width: 960px;
+        margin: 0 auto;
+        
+    }
+    
+    nav a {
+        max-width: 100%;
+    }
+    
+    .logo {
+        justify-self: end;
+        margin-right: 150px;   
+        width: 120px;
+    }
+    
+    .header-grid {
+        grid-template-rows: 90px 25px;
+    }
+    
+    .site-name {
+        justify-self: start;
+        align-self: end;
+        margin-left: -100px;
+        margin-bottom: -10px;
+    }
+    
+    .hero-img {
+        width: 100%;
+        
+    }
+
+    .forecast {
+        display: unset;
+       
+    }
+
+    .forecast h2 {
+        text-align: center;
+        
+    }
+
+    table {
+        border-collapse: collapse;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        
+    }
+    
+    table, th, td {
+        border: 1px solid black;
+        align-self: center;
+    }
+    
+    th, td {
+        padding: 15px;
+    }
+    
+    main h1 {
+        text-align: center;
+    }
+
+    iframe {
+        display: block;
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .hero-img {
+        width: 100%;
+    }
+
+    .article-img {
+        width: 40%;
+        float: right;
+    }
+
+    /*.active {
+        color: grey;
+        background-color: white;
+    }*/
+
+    .contact-info {
+        /*display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;*/
+        margin-top: 50px;
+        background-color: #1F5673;
+        border: solid;
+        color: white;
+        padding: 20px;
+        border-radius: 40px;
+        box-shadow: 0 10px 40px rgba(159, 162, 177, 0.8);
+    
+    }
+
+
+}
+
+
+
+
+
+
+
