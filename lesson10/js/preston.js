@@ -29,7 +29,7 @@ document.getElementById("chill").textContent = chill.toFixed(2);
 
 
 //
-const apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=2882079f1e2bd826f567208ce3164038"
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=2882079f1e2bd826f567208ce3164038"
 
 fetch(apiURL)
   .then((response) => response.json())
@@ -42,7 +42,7 @@ fetch(apiURL)
 
 });
 
-const apiFOR = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=2882079f1e2bd826f567208ce3164038"
+const apiFOR = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=2882079f1e2bd826f567208ce3164038"
 
 fetch(apiFOR)
   .then((response) => response.json())
