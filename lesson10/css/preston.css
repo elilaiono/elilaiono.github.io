@@ -67,6 +67,7 @@ p {
 .navigation a:hover {
     color: grey;
     background-color: white;
+    border-radius: 40px;
 }
 
 .responsive li {
@@ -143,7 +144,7 @@ h2, p {margin: 0;}
 	border: 1px solid #000;
 	padding: 1rem;
 	box-shadow: 0 0 30px #111;
-	opacity: .8;
+	opacity: .85;
 }
 
 .forecast {
@@ -227,6 +228,17 @@ iframe {
         margin-left: -100px;
         margin-bottom: -10px;
     }
+
+    .weather-summary {
+        left: 100px;
+    }
+
+    picture img {
+        max-width: 800px;
+        display: block;
+        height: 400px;
+        margin: 0 auto;
+    }
     
     .hero-img {
         width: 100%;
@@ -244,20 +256,24 @@ iframe {
     }
 
     table {
-        border-collapse: collapse;
         margin: 0 auto;
         margin-top: 10px;
         margin-bottom: 50px;
-        
-    }
-    
-    table, th, td {
-        border: 1px solid black;
-        align-self: center;
+        box-shadow: 5px 10px 15px #333;
+        font-family: 'PT Serif', sans-serif;
+        border-collapse: collapse;
     }
     
     th, td {
+        border: 1px solid black;
+        align-self: center;
         padding: 15px;
+    }
+
+    tbody tr:first-child {
+        color: white;
+        background-color: #2874A6;
+        font-size: 1.5em;
     }
     
     main h1 {
