@@ -51,7 +51,7 @@ fetch(apiFOR)
 
       for (let i = 0; i < 5; i++) {
         document.getElementById('day' + i).textContent = (jsObject.list[i].main.temp * 9/5 - 459.67).toFixed(2); 
-        const imagesrc = jsObject.list[i].weather[0].icon; 
+        const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.list[i].weather[0].icon + '.png';
         const desc = jsObject.list[i].weather[0].description; 
         document.getElementById('icon' + i).setAttribute('src', imagesrc);  
         document.getElementById('icon' + i).setAttribute('alt', desc);
