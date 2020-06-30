@@ -42,7 +42,9 @@ fetch(apiURL)
 
 });
 
-fetch(apiURL)
+const apiFOR = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=2882079f1e2bd826f567208ce3164038"
+
+fetch(apiFOR)
   .then((response) => response.json())
   .then((jsObject) => {
     console.log(jsObject);
@@ -56,3 +58,4 @@ fetch(apiURL)
         }
         
     });
+    
