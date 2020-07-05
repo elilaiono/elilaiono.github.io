@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Today's Weather: Preston Idaho</title>
+    <meta name="author" content="name">
+    <meta name="description"
+        content="Here's a website that will display the current and future weather of Preston, Idaho.">
+    <link rel="stylesheet" href="css/preston.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="pancakes">
+        <p>Saturday = Preston Pancakes in the Park! <br>
+            9:00a.m. Saturday at the city park pavilion.</p>
+    </div>
+        <header>
+
+            <div class="header-grid">
+                <img class="logo" src="images/preston-logo.png" alt="logo for website">
+                <h1 class="site-name">Today's Weather</h1>
+                <h3 class="slogan">Come for the weather... Stay for the experience</h3>
+            </div>
+            <nav>
+                <ul class="navigation">
+                    <li><a class="ham" href="#">&#9776; Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="#">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Report</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <div id="content">
+            <main>
+                <h1>Preston Idaho</h1>
+                <div class="herodiv">
+                    <picture>
+                        <source srcset="images/landscape.jpg" media="(min-width: 500px) and (max-width: 799px)">
+                        <source srcset="images/landscape.jpg" media="(min-width: 800px)">
+                        <img class="hero-img" src="images/landscape.jpg" alt="picture of nature">
+                    </picture>
+                    <section class="weather-summary">
+                        <h2>Weather Summary</h2>
+                        <p>Currently: <span id="currently"></span></p>
+                        <p>High: <span id="temp"></span>°F</p>
+                        <p>Wind Chill: <span id="chill"></span></p>
+                        <p>Humidity: <span id="humid"></span>%</p>
+                        <p>Wind Speed: <span id="wind"></span>mph</p>
+
+                    </section>
+                </div>
+                <section class="forecast">
+                    <h2>5 Day Forecast</h2>
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Wed</td>
+                            <td>Thu</td>
+                            <td>Fri</td>
+                            <td>Sat</td>
+                            <td>Sun</td>
+                        </tr>
+                        <tr>
+                            <td><img src="" alt="" id="icon0"></td>
+                            <td><img src="" alt="" id="icon1"></td>
+                            <td><img src="" alt="" id="icon2"></td>
+                            <td><img src="" alt="" id="icon3"></td>
+                            <td><img src="" alt="" id="icon4"></td>
+                        </tr>
+                        <tr>
+                            <td><span id="day0"></span>°F</td>
+                            <td><span id="day1"></span>°F</td>
+                            <td><span id="day2"></span>°F</td>
+                            <td><span id="day3"></span>°F</td>
+                            <td><span id="day4"></span>°F</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </section>
+                <section class="article">
+                    <h2>The Founders of Preston, Idaho</h2>
+                    <h5>By: Chris Brown</h5>
+                    <p><img class="article-img" src="images/clouds-preston.jpg" alt="picture of the clouds">Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                        eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                        eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum.
+                    </p>
+
+                </section>
+                <section class="contact-info">
+                    <h3 class="contact-header">Today's Weather</h3>
+                    <div class="info">
+                    <p>20 N 2nd W <br>
+                       Preston, Idaho 06421 <br>
+                       &#9742; 589.444.6989 <br>
+                       &#9993; todaysweather@gmail.com
+                    </p>
+                   </div>
+                    <div class="social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    </div>
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.77385344882!2d-111.91534447868689!3d42.09974162637601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1590517936973!5m2!1sen!2sus"
+                        style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </section>
+
+            </main>
+            <footer>
+                <p>
+                    &copy; 2020 | Elijah L. Aiono | Nevada | <a href="https://byui.edu/online">BYUI Online Learning</a>
+                </p>
+                <div class="currentdate"></div>
+
+            </footer>
+        </div>
+        <script src="js/preston.js"></script>
+</body>
+
+</html>
