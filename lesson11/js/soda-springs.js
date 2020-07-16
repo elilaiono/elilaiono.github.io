@@ -29,7 +29,7 @@ document.getElementById("chill").textContent = chill.toFixed(2);
 
 
 //
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=2882079f1e2bd826f567208ce3164038"
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&appid=2882079f1e2bd826f567208ce3164038"
 
 fetch(apiURL)
   .then((response) => response.json())
@@ -42,7 +42,7 @@ fetch(apiURL)
 
 });
 
-const apiFOR = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=2882079f1e2bd826f567208ce3164038"
+const apiFOR = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&appid=2882079f1e2bd826f567208ce3164038"
 
 fetch(apiFOR)
   .then((response) => response.json())
@@ -59,36 +59,35 @@ fetch(apiFOR)
         
     });
 
+    const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
-//Upcoming events
-
-const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-
-fetch(requestURL)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-      console.table(jsonObject);  // temporary checking for valid response and data parsing
-      const towns = jsonObject['towns'];
-      for (let i = 0; i < towns.length; i++ ) {
-         if (towns[i].name == "Preston") {
-           for (let e = 0; e < towns[i].events.length; e++) {
-           let card = document.createElement('section');
-           let para = document.createElement('p');
-         
-           pres = towns[i].events[e]
-           para.textContent = pres;
-           card.appendChild(para);
-           document.querySelector('div.events').appendChild(card);
-
-           
-    }
-    }
-    } 
-  })
-
-  .catch(function(error){
-    alert("Sorry the data is not available now.");
-});
+    fetch(requestURL)
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (jsonObject) {
+          console.table(jsonObject);  // temporary checking for valid response and data parsing
+          const towns = jsonObject['towns'];
+          for (let i = 0; i < towns.length; i++ ) {
+             if (towns[i].name == "Soda Springs") {
+               for (let e = 0; e < towns[i].events.length; e++) {
+               let card = document.createElement('section');
+               let para = document.createElement('p');
+             
+               pres = towns[i].events[e]
+               para.textContent = pres;
+               card.appendChild(para);
+               document.querySelector('div.events').appendChild(card);
+    
+               
+        }
+        }
+        } 
+      })
+    
+      .catch(function(error){
+        alert("Sorry the data is not available now.");
+    });
+        
+    
     

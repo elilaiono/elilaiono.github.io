@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+main {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
 h1 {
     text-align: center;
     padding-top: 10px;
@@ -14,7 +19,7 @@ form {
 
 label, textarea, input, div, select {
     display: block;
-    font-family: "Roboto", sans-serif;
+    font-family: "PT Serif", sans-serif;
 }
 
 input, select {
@@ -29,18 +34,20 @@ input, select {
 }
 
 legend {
-    font-family: "Roboto", serif;
+    font-family: "PT Serif", serif;
     font-size: 1.2em;
     padding: 5px 20px 10px 20px;
     background-color: #1F5673;
     color: white;
     display: block;
-    border-radius: 20px;
+    border-radius: 40px;
 }
 
 fieldset {
     border: none;
     padding-left: 40px;
+    box-shadow: 5px 10px 15px #333;
+    margin-bottom: 50px;
 }
 
 input[type="radio"] {
@@ -58,12 +65,22 @@ label {
     margin: 0 auto;
     margin-bottom: 20px;
     padding-top: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
     border-radius: 40px;
     font-size: 1.2em;
     border: 1px solid #ccc;
-    
 }
+
+.flexly {
+	display: flex;
+	align-items: center;
+}
+
+#ratingvalue {
+	margin: 0 15px;
+}
+
+
 
 
 input:invalid {
@@ -76,6 +93,7 @@ input:valid {
 .sub-button:hover {
    color: white;
    background-color: #1F5673;
+   cursor: pointer;
 }
 
 .radio-label {
@@ -111,7 +129,7 @@ input:valid {
 }
 
     .sub-button {
-    width: 150px;
+    width: 200px;
     padding-bottom: 50px;
 }
 

@@ -44,6 +44,7 @@ p {
     padding-bottom: 20px;
     border-style: groove;
     margin-bottom: 5px;
+    margin-top: 10px;
 }
 
 h3 {
@@ -62,7 +63,7 @@ h1, h3, p, footer {
     text-align: center;
 }
 
-img {
+section img {
     display: block;
     max-width: 200px;
     margin: 0 auto;
@@ -236,7 +237,10 @@ iframe {
     #content {
         max-width: 960px;
         margin: 0 auto;
-        
+    }
+
+    footer {
+        padding: 10px;
     }
     
     nav a {
@@ -332,7 +336,7 @@ iframe {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         margin-top: 50px;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
         background-color: #2874A6;
         border: solid;
         color: white;
@@ -429,6 +433,8 @@ iframe {
     .navigation li:first-child {
         display: none;
     }
+
+   
     
     
     

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Today's Weather: Preston Idaho</title>
+    <title>Today's Weather | Preston</title>
     <meta name="author" content="name">
     <meta name="description"
         content="Here's a website that will display the current and future weather of Preston, Idaho.">
@@ -18,49 +18,49 @@
         <p>Saturday = Preston Pancakes in the Park! <br>
             9:00a.m. Saturday at the city park pavilion.</p>
     </div>
-        <header>
+    <header>
 
-            <div class="header-grid">
-                <img class="logo" src="images/preston-logo.png" alt="logo for website">
-                <h1 class="site-name">Today's Weather</h1>
-                <h3 class="slogan">Come for the weather... Stay for the experience</h3>
+        <div class="header-grid">
+            <img class="logo" src="images/preston-logo.png" alt="logo for website">
+            <h1 class="site-name">Today's Weather</h1>
+            <h3 class="slogan">Come for the weather... Stay for the experience</h3>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="#">Preston</a></li>
+                <li><a href="soda-springs.html">Soda Springs</a></li>
+                <li><a href="fish-haven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Report</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <div id="content">
+        <main>
+            <h1>Preston Idaho</h1>
+            <div class="herodiv">
+                <picture>
+                    <source srcset="images/landscape.jpg" media="(min-width: 500px) and (max-width: 799px)">
+                    <source srcset="images/landscape.jpg" media="(min-width: 800px)">
+                    <img class="hero-img" src="images/landscape.jpg" alt="picture of nature">
+                </picture>
+                <section class="weather-summary">
+                    <h2>Weather Summary</h2>
+                    <p>Currently: <span id="currently"></span></p>
+                    <p>High: <span id="temp"></span>°F</p>
+                    <p>Wind Chill: <span id="chill"></span></p>
+                    <p>Humidity: <span id="humid"></span>%</p>
+                    <p>Wind Speed: <span id="wind"></span>mph</p>
+
+                </section>
             </div>
-            <nav>
-                <ul class="navigation">
-                    <li><a class="ham" href="#">&#9776; Menu</a></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a class="active" href="#">Preston</a></li>
-                    <li><a href="#">Soda Springs</a></li>
-                    <li><a href="#">Fish Haven</a></li>
-                    <li><a href="stormcenter.html">Storm Report</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-
-                </ul>
-            </nav>
-        </header>
-        <div id="content">
-            <main>
-                <h1>Preston Idaho</h1>
-                <div class="herodiv">
-                    <picture>
-                        <source srcset="images/landscape.jpg" media="(min-width: 500px) and (max-width: 799px)">
-                        <source srcset="images/landscape.jpg" media="(min-width: 800px)">
-                        <img class="hero-img" src="images/landscape.jpg" alt="picture of nature">
-                    </picture>
-                    <section class="weather-summary">
-                        <h2>Weather Summary</h2>
-                        <p>Currently: <span id="currently"></span></p>
-                        <p>High: <span id="temp"></span>°F</p>
-                        <p>Wind Chill: <span id="chill"></span></p>
-                        <p>Humidity: <span id="humid"></span>%</p>
-                        <p>Wind Speed: <span id="wind"></span>mph</p>
-
-                    </section>
-                </div>
-                <section class="forecast">
-                    <h2>5 Day Forecast</h2>
-                    <table>
-                        <tbody>
+            <section class="forecast">
+                <h2>5 Day Forecast</h2>
+                <table>
+                    <tbody>
                         <tr>
                             <td>Wed</td>
                             <td>Thu</td>
@@ -83,58 +83,75 @@
                             <td><span id="day4"></span>°F</td>
                         </tr>
                     </tbody>
-                    </table>
-                </section>
-                <section class="article">
-                    <h2>The Founders of Preston, Idaho</h2>
-                    <h5>By: Chris Brown</h5>
-                    <p><img class="article-img" src="images/clouds-preston.jpg" alt="picture of the clouds">Lorem ipsum
-                        dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                        eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                        eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt mollit anim id est laborum.
-                    </p>
+                </table>
+            </section>
+            <section class="article">
+                <h2>The Founders of Preston, Idaho</h2>
+                <p><img class="article-img" src="images/clouds-preston.jpg" alt="picture of the clouds">Located on the
+                    flat, at the junction of
+                    Highways 91 and 36 is the county seat of Franklin County: Preston, Idaho. Prior to 1881, the flat
+                    was known as “Worm Creek”
+                    [pronounced “crick”]. Those that settled this area were predominantly Mormon and their leadership
+                    came from the LDS Church
+                    President in Salt Lake City, Utah. The name Preston was chosen for the area in the following manner
+                    as recorded by Baltzer
+                    Peterson:<br><br>
+            
+                    On May 14, 1881, a special meeting was held. Some of the Church Leaders at Salt Lake City objected
+                    to the name “Worm Creek” as
+                    pertaining to any Church Organization. They thought that a more appropriate name should be given the
+                    Ward for they were not in
+                    favor of the name “Worm” being used when it pertained to anything connected with the Church. Mrs.
+                    Rachel Porter, wife of Bishop
+                    Porter, had the privilege of suggesting the name “Preston” in honor of Bishop William B. Preston of
+                    the Cache Stake, and who
+                    later became the presiding Bishop of the Church. Thus Preston became the name of the Ward and the
+                    Community.<br><br>
 
-                </section>
-                <section class="contact-info">
-                    <h3 class="contact-header">Today's Weather</h3>
-                    <div class="info">
+                    The first permanent residence within the present city limits of Preston was established by Dennis W.
+                    Winn in 1868. He built a
+                    frame home 32 by 16 feet. The house was located a mile southeast of the city center. Due to the lack
+                    of water on the sand ridge
+                    or the Preston Flat, settlements had surrounded the Flat before the first homes were built there.
+                </p>
+                
+            </section>
+            <div class="upcoming-events">
+                <h2>Upcoming Events</h2>
+                <div class="events"></div>
+
+            </div>
+
+            <section class="contact-info">
+                <h3 class="contact-header">Today's Weather</h3>
+                <div class="info">
                     <p>20 N 2nd W <br>
-                       Preston, Idaho 06421 <br>
-                       &#9742; 589.444.6989 <br>
-                       &#9993; todaysweather@gmail.com
+                        Preston, Idaho 06421 <br>
+                        &#9742; 589.444.6989 <br>
+                        &#9993; todaysweather@gmail.com
                     </p>
-                   </div>
-                    <div class="social">
+                </div>
+                <div class="social">
                     <a href="#" class="fa fa-facebook"></a>
                     <a href="#" class="fa fa-twitter"></a>
                     <a href="#" class="fa fa-instagram"></a>
-                    </div>
+                </div>
 
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.77385344882!2d-111.91534447868689!3d42.09974162637601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1590517936973!5m2!1sen!2sus"
-                        style="border:0;" allowfullscreen=""
-                        aria-hidden="false" tabindex="0"></iframe>
-                </section>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.77385344882!2d-111.91534447868689!3d42.09974162637601!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1590517936973!5m2!1sen!2sus"
+                    style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </section>
 
-            </main>
-            <footer>
-                <p>
-                    &copy; 2020 | Elijah L. Aiono | Nevada | <a href="https://byui.edu/online">BYUI Online Learning</a>
-                </p>
-                <div class="currentdate"></div>
+        </main>
+        <footer>
+            <p>
+                &copy; 2020 | Elijah L. Aiono | Nevada | <a href="https://byui.edu/online">BYUI Online Learning</a>
+            </p>
+            <div class="currentdate"></div>
 
-            </footer>
-        </div>
-        <script src="js/preston.js"></script>
+        </footer>
+    </div>
+    <script src="js/preston.js"></script>
 </body>
 
 </html>

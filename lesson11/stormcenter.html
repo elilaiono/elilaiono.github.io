@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Storm Center</title>
+    <title>Today's Weather | Storm Center</title>
     <meta name="author" content="name">
     <meta name="This page is where you'll be able to report a storm"
         content="Here's a website that will display the current and future weather of Preston, Idaho.">
@@ -26,8 +26,8 @@
                 <li><a class="ham" href="#">&#9776; Menu</a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="preston.html">Preston</a></li>
-                <li><a href="#">Soda Springs</a></li>
-                <li><a href="#">Fish Haven</a></li>
+                <li><a href="soda-springs.html">Soda Springs</a></li>
+                <li><a href="fish-haven.html">Fish Haven</a></li>
                 <li><a class="active" href="#">Storm Report</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
             </ul>
@@ -39,7 +39,7 @@
             <div id="all">
             <fieldset class="content-box">
                 <legend>Contact Information</legend>
-                <label class="item">Name*<input  minlength="5" pattern="[A-Za-z]+$" type="text" name="name" required></label>
+                <label class="item">Name*<input minlength="5" pattern="[A-Za-z]+$" type="text" name="name" required></label>
                 <label class="item">Email<input type="email" name="email" placeholder="example@email.com"></label>
                 <label class="item">Phone Number*<input type="tel" name="phone" required></label>
                 <label class="item">Zip Code*<input type="number" name="zip" required></label>
@@ -53,7 +53,25 @@
                         <option>Thunderstorm</option>
                         <option>Tornado</option>
                     </datalist></label>
-                <label class="item">Storm Severity<input type="range" name="severity" min="1" max="10" step="1"></label>
+                <label class="flexly" for="rating">Rating: &nbsp;&nbsp;&nbsp;
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)"
+                 onchange="adjustRating(this.value)"><span id="ratingvalue">5</span>
+                </label>
+            
+                <datalist id="tickmarks">
+                    <option value="0">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                </datalist>
+
                 <label class="item">Region<select name="region">
                         <option selected disabled>Please Select</option>
                         <option value="preston">Preston</option>
@@ -80,6 +98,7 @@
     
     </footer>
     <script src="js/preston.js"></script>
+    <script src="js/storm.js"></script>
     </body>
     
     </html>
